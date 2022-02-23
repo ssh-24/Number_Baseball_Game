@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <title>Baseball</title>
+    <link rel="stylesheet" href="../../utils/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+
+  <body>
+    <main>
+      <h1>Number Baseball</h1>
+      <section>
+        <div class="ball_answer">정답은?</div>
+        <form>
+          <!-- label의 for === input의 id -->
+          <label for="question"></label>
+          <input type="number" class="ball_input" id="question" name="qst" min="0" max="9999" placeholder="4자리 숫자를 입력">
+          <button>도전</button>
+          <!-- form안의 button은 기본적으로 submit으로 동작, 원하지 않으면 type="button" 추가 -->
+        </form>
+        
+        <div class="ball_question">결과</div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
