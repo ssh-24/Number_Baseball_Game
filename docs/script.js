@@ -151,5 +151,18 @@
   }
 
 
+  // 새로고침
+  $answer.addEventListener('click', () => {
+    if(confirm('다시 시작할까요?')){
+      location.reload()
+    }
+  });
+  get('h1').addEventListener('click',() => {
+    if(confirm('다시 시작할까요?')){
+    location.reload()
+    }
+  });
+
+
   init();
 })()
